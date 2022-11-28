@@ -21,12 +21,33 @@ body {
   color: var(--text);
   background-color: #ffffff;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  /* line-height: 1.5; */
+  /* letter-spacing: 0.02em; */
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo-studio {
+  color: var(--dark);
+}
+
+.logo-studio-white {
+  color: var(--light);
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   color: var(--primaty-brand);
   text-decoration: none;
   font-weight: 800;
@@ -40,14 +61,16 @@ body {
   color: #404bbf;
 }
 
-.site-nav .link {
+/* .site-nav .link */
+.nav-link {
   color: var(--dark);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--primaty-brand);
 }
 
@@ -63,7 +86,7 @@ body {
 }
 
 .contacts .list,
-.site-nav .list,
+.nav-list,
 .team-members .team-member,
 .examples .list,
 .future-list .list,
@@ -79,7 +102,7 @@ body {
 
 .hero-title {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -88,8 +111,9 @@ body {
 .hero-button {
   color: #ffffff;
   background-color: var(--primaty-brand);
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.04em;
@@ -101,11 +125,22 @@ body {
   background-color: #404bbf;
 }
 
+.black-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 /* portfolio page */
 .services-button {
   color: var(--primaty-brand);
-  background-color: var(--light);
+  background-color: var(--accent);
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .services-button:hover,
@@ -123,7 +158,7 @@ body {
 }
 
 .secondary-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
 }
